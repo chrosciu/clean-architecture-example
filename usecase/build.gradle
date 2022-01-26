@@ -5,6 +5,11 @@ ext.moduleName = 'slalom.example.usecase'
 dependencies {
 	implementation(
 		project(':domain'),
-		'org.apache.commons:commons-lang3:3.7'
+		'org.apache.commons:commons-lang3:3.7',
+		'org.junit.jupiter:junit-jupiter:5.7.0'
 	)
+}
+
+test {
+	useJUnitPlatform()
 }
