@@ -1,11 +1,13 @@
 package com.slalom.example.controller.model;
 
 import com.slalom.example.domain.entity.User;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+@EqualsAndHashCode
 public class UserWeb {
 	private String id;
 	private String email;
